@@ -9,6 +9,7 @@ export const HeaderSection = styled("header")`
     align-items: center;
     text-align: center;
   }
+  background-color: #880201;
 `;
 
 export const LogoContainer = styled(Link)`
@@ -18,6 +19,7 @@ export const LogoContainer = styled(Link)`
 export const NavLink = styled("div")`
   display: inline-block;
   text-align: center;
+  font-weight: 700;
 `;
 
 export const CustomNavLink = styled("div")`

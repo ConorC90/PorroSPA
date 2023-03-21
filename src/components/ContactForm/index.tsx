@@ -10,24 +10,37 @@ import Input from "../../common/Input";
 import TextArea from "../../common/TextArea";
 import { ContactContainer, FormGroup, Span, ButtonContainer } from "./styles";
 
-const Contact = ({ title, content, id, t }: ContactProps) => {
-  const { values, errors, handleChange, handleSubmit } = useForm(
-    validate
-  ) as any;
+const Contact = ({ title, content, id, t }: any) => {
+  // const { values, errors, handleChange, handleSubmit } = useForm(
+  //   validate
+  // ) as any;
 
-  const ValidationType = ({ type }: ValidationTypeProps) => {
-    const ErrorMessage = errors[type];
-    return (
-      <Zoom direction="left">
-        <Span erros={errors[type]}>{ErrorMessage}</Span>
-      </Zoom>
-    );
-  };
+  // const ValidationType = ({ type }: any) => {
+  //   const ErrorMessage = errors[type];
+  //   return (
+  //     <Zoom direction="left">
+  //       <Span erros={errors[type]}>{ErrorMessage}</Span>
+  //     </Zoom>
+  //   );
+  // };
 
   return (
     <ContactContainer id={id}>
       <Row justify="space-between" align="middle">
         <Col lg={12} md={11} sm={24} xs={24}>
+          <ButtonContainer>
+            <Button
+              onClick={() =>
+                window.open(
+                  "https://docs.google.com/forms/d/e/1FAIpQLSdneZnVzUndli87Kz27hAYJyAJL6MIU2eeWUHWw-wSQGFM6-Q/viewform?usp=sf_link"
+                )
+              }
+            >
+              {"Register"}
+            </Button>
+          </ButtonContainer>
+        </Col>
+        {/* <Col lg={12} md={11} sm={24} xs={24}>
           <Slide direction="left">
             <Block title={title} content={content} />
           </Slide>
@@ -69,7 +82,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
               </ButtonContainer>
             </FormGroup>
           </Slide>
-        </Col>
+        </Col> */}
       </Row>
     </ContactContainer>
   );

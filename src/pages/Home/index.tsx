@@ -20,41 +20,41 @@ const Home = () => {
         type="right"
         title={IntroContent.title}
         content={IntroContent.text}
-        button={IntroContent.button}
-        icon="developer.svg"
+        // button={IntroContent.button}
+        icon="manPointingWithFrisbee.jpg"
         id="intro"
       />
-      <MiddleBlock
+      {/* <MiddleBlock
         title={MiddleBlockContent.title}
         content={MiddleBlockContent.text}
         button={MiddleBlockContent.button}
-      />
+      /> */}
       <ContentBlock
         type="left"
         title={AboutContent.title}
         content={AboutContent.text}
         section={AboutContent.section}
-        icon="graphs.svg"
+        icon="boyWithFrisbee.jpg"
         id="about"
-      />
-      <ContentBlock
-        type="right"
-        title={MissionContent.title}
-        content={MissionContent.text}
-        icon="product-launch.svg"
-        id="mission"
       />
       <ContentBlock
         type="left"
         title={ProductContent.title}
         content={ProductContent.text}
-        icon="waving.svg"
+        icon="girlWithBeer.jpg"
         id="product"
       />
       <Contact
         title={ContactContent.title}
         content={ContactContent.text}
         id="contact"
+      />
+      <ContentBlock
+        type="right"
+        title={MissionContent.title}
+        content={MissionContent.text}
+        icon="manDrinkingPorro.jpg"
+        id="mission"
       />
     </Container>
   );
