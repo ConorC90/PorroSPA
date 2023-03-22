@@ -12,6 +12,20 @@ const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
 
+console.log(
+  "%c What are you doing here? ",
+  "color: yellow; font-size: 35px; background-color: green;"
+);
+
+console.log(
+  "%c You must think that you are very clever.... ",
+  "color: yellow; font-size: 35px; background-color: green;"
+);
+
+const openMailingList = () => {
+  // return (window.location.href = "http://eepurl.com/h8pUib");
+};
+
 const Home = () => {
   return (
     <Container>
@@ -19,23 +33,18 @@ const Home = () => {
       <ContentBlock
         type="right"
         title={IntroContent.title}
-        content={IntroContent.text}
+        content={IntroContent.content}
+        text={IntroContent.text}
+        subtext={IntroContent.subtext}
         // button={IntroContent.button}
         icon="manPointingWithFrisbee.jpg"
         id="intro"
       />
-      {/* <MiddleBlock
+      <MiddleBlock
         title={MiddleBlockContent.title}
         content={MiddleBlockContent.text}
         button={MiddleBlockContent.button}
-      /> */}
-      <ContentBlock
-        type="left"
-        title={AboutContent.title}
-        content={AboutContent.text}
-        section={AboutContent.section}
-        icon="boyWithFrisbee.jpg"
-        id="about"
+        buttonOnClick={openMailingList()}
       />
       <ContentBlock
         type="left"
@@ -44,11 +53,19 @@ const Home = () => {
         icon="girlWithBeer.jpg"
         id="product"
       />
-      <Contact
+      <ContentBlock
+        type="right"
+        title={AboutContent.title}
+        content={AboutContent.text}
+        section={AboutContent.section}
+        icon="boyWithFrisbee.jpg"
+        id="about"
+      />
+      {/* <Contact
         title={ContactContent.title}
         content={ContactContent.text}
         id="contact"
-      />
+      /> */}
       <ContentBlock
         type="right"
         title={MissionContent.title}

@@ -8,10 +8,17 @@ interface MiddleBlockProps {
   title: string;
   content: string;
   button: string;
+  buttonOnClick?: any;
   t: any;
 }
 
-const MiddleBlock = ({ title, content, button, t }: MiddleBlockProps) => {
+const MiddleBlock = ({
+  title,
+  content,
+  button,
+  buttonOnClick,
+  t,
+}: MiddleBlockProps) => {
   const scrollTo = (id: string) => {
     const element = document.getElementById(id) as HTMLDivElement;
     element.scrollIntoView({
@@ -27,7 +34,12 @@ const MiddleBlock = ({ title, content, button, t }: MiddleBlockProps) => {
               <h6>{t(title)}</h6>
               <Content>{t(content)}</Content>
               {button && (
-                <Button name="submit" onClick={() => scrollTo("mission")}>
+                <Button
+                  name="submit"
+                  onClick={() =>
+                    (window.location.href = "http://eepurl.com/h8pUib")
+                  }
+                >
                   {t(button)}
                 </Button>
               )}
