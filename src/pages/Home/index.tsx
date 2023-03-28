@@ -5,6 +5,7 @@ import AboutContent from "../../content/AboutContent.json";
 import MissionContent from "../../content/MissionContent.json";
 import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
+import MailchimpForm from "../../components/Forms/MailChimpSignUp";
 
 const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
@@ -46,6 +47,7 @@ const Home = () => {
         button={MiddleBlockContent.button}
         buttonOnClick={openMailingList()}
       />
+
       <ContentBlock
         type="left"
         title={ProductContent.title}
@@ -61,6 +63,7 @@ const Home = () => {
         icon="GandTBar.jpg"
         id="about"
       />
+      <MailchimpForm></MailchimpForm>
       {/* <Contact
         title={ContactContent.title}
         content={ContactContent.text}

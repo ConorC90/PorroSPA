@@ -7,7 +7,8 @@ export interface ButtonProps {
   color?: string;
   fixedWidth?: boolean;
   name?: string;
-  children: React.ReactNode;
+  label?: string;
+  children?: React.ReactNode;
   onClick?: () => void;
 }
 
@@ -22,12 +23,13 @@ export interface InputProps {
   placeholder: string;
   t: any;
   type?: string;
-  value?: string;
-  onChange: (
-    event:
-      | React.ChangeEvent<HTMLInputElement>
-      | React.ChangeEvent<HTMLTextAreaElement>
-  ) => void;
+  value?: any;
+  onChange?: any;
+  // onChange: (
+  //   event:
+  //     | React.ChangeEvent<HTMLInputElement>
+  //     | React.ChangeEvent<HTMLTextAreaElement>
+  // ) => void;
 }
 
 export interface validateProps {
