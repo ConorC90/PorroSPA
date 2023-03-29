@@ -1,15 +1,20 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { MenuOutlined } from "@ant-design/icons";
+import { MenuOutlined, CloseOutlined } from "@ant-design/icons";
 
 export const HeaderSection = styled("header")`
-  padding: 1rem 0.5rem;
-
+  padding: 0.5rem 0.5rem;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
   .ant-row-space-between {
     align-items: center;
     text-align: center;
   }
   background-color: #880201;
+  @media only screen and (max-width: 411px) {
+    padding: 0.5rem 0.5rem;
+  }
 `;
 
 export const LogoContainer = styled(Link)`
@@ -45,21 +50,34 @@ export const ContactWrapper = styled("div")<any>`
 `;
 
 export const Burger = styled("div")`
-  @media only screen and (max-width: 890px) {
-    display: block;
-  }
-
-  display: none;
-
   svg {
-    fill: #2e186a;
+    fill: white;
   }
 `;
 
-export const NotHidden = styled("div")`
-  @media only screen and (max-width: 890px) {
+export const Mobile = styled("div")`
+  @media only screen and (max-width: 420px) {
     display: none;
   }
+`;
+export const Tablet = styled("div")`
+  @media only screen and (max-width: 420px) {
+    display: none;
+  }
+`;
+export const Desktop = styled("div")`
+  @media only screen and (max-width: 420px) {
+    display: none;
+  }
+`;
+export const StickyDiv = styled("div")`
+  // position: fixed;
+  // top: 0px;
+  z-index: 1;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
 `;
 
 export const Menu = styled("h5")`
@@ -70,12 +88,13 @@ export const Menu = styled("h5")`
 
 export const CustomNavLinkSmall = styled(NavLink)`
   font-size: 1.2rem;
-  color: #18216d;
+  color: white;
   transition: color 0.2s ease-in;
   margin: 0.5rem 2rem;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1025px) {
     margin: 1.25rem 2rem;
+    color: rgb(46, 24, 106);
   }
 `;
 
@@ -88,19 +107,39 @@ export const Label = styled("span")`
   align-items: baseline;
 `;
 
-export const Outline = styled(MenuOutlined)<any>`
+export const Close = styled(CloseOutlined)<any>`
+  font-size: 22px;
+  color: rgb(46, 24, 106);
+`;
+export const BurgerIcon = styled(MenuOutlined)<any>`
   font-size: 22px;
 `;
 
 export const Span = styled("span")`
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
-
+  transition: all 0.5s ease-in-out;
   &:hover,
   &:active,
   &:focus {
-    color: rgb(255, 130, 92);
+    font-weight: 1000;
     text-underline-position: under;
-    text-decoration: rgb(255, 130, 92) wavy underline;
+    text-decoration: rgb(46, 24, 106) underline overline;
+    text-decoration-thickness: 3px;
+    color: rgb(46, 24, 106);
   }
+`;
+export const BannerText = styled("h2")`
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-right: 100px;
+  color: white;
+  mar
+`;
+export const MobileBannerText = styled("h2")`
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 0px;
 `;

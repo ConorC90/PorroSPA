@@ -94,24 +94,16 @@ const Footer = ({ t }: any) => {
           <Row
             justify="space-between"
             align="middle"
-            style={{ paddingTop: "3rem" }}
+            style={{ padding: "1rem" }}
           >
             <NavLink to="/">
               <LogoContainer></LogoContainer>
             </NavLink>
             <FooterContainer>
-              {/* <SocialLink
-                href="https://github.com/Adrinlol/create-react-app-adrinlol"
-                src="github.svg"
-              />
               <SocialLink
-                href="https://twitter.com/Adrinlolx"
-                src="twitter.svg"
+                href="https://www.instagram.com/bravasultimate/"
+                src="instagram.svg"
               />
-              <SocialLink
-                href="https://www.linkedin.com/in/lasha-kakabadze/"
-                src="linkedin.svg"
-              /> */}
               <SocialLink
                 href="https://www.facebook.com/people/Porr%C3%B3-Open/100064767934714/"
                 src="facebook.png"

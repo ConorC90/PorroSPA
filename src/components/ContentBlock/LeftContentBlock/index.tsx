@@ -14,25 +14,44 @@ import {
 } from "./styles";
 
 const LeftContentBlock = ({
-  icon,
   title,
-  content,
-  section,
+  paragraph1,
+  paragraph2,
+  paragraph3,
+  paragraph4,
+  paragraph5,
+  paragraph6,
+  button,
+  icon,
   t,
   id,
+  buttonOnClick,
 }: ContentBlockProps) => {
   return (
     <LeftContentSection>
       <Fade direction="left">
-        <Row justify="space-between" align="middle" id={id}>
+        <Row justify="space-evenly" align="middle" id={id}>
           <Col lg={11} md={11} sm={12} xs={24}>
             <Image src={icon} width="100%" height="100%" />
           </Col>
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
-              <h6>{t(title)}</h6>
-              <Content>{t(content)}</Content>
-              <ServiceWrapper>
+              <h3>{t(title)}</h3>
+              <Content>{paragraph1}</Content>
+              <Content>{paragraph2}</Content>
+              <Content>{paragraph3}</Content>
+              <Content>{paragraph4}</Content>
+              <Content>{paragraph5}</Content>
+              <Content>{paragraph6}</Content>
+              {/*               
+              <Content>{t(paragraph1)}</Content>
+              <Content>{t(paragraph2)}</Content>
+              <Content>{t(paragraph3)}</Content>
+              <Content>{t(paragraph4)}</Content>
+              <Content>{t(paragraph5)}</Content>
+              <Content>{t(paragraph6)}</Content> */}
+
+              {/* <ServiceWrapper>
                 <Row justify="space-between">
                   {typeof section === "object" &&
                     section.map((item: any, id: number) => {
@@ -45,7 +64,7 @@ const LeftContentBlock = ({
                       );
                     })}
                 </Row>
-              </ServiceWrapper>
+              </ServiceWrapper> */}
             </ContentWrapper>
           </Col>
         </Row>
