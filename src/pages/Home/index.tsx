@@ -30,7 +30,22 @@ const Home = () => {
   return (
     <Container>
       <ScrollToTop />
-      <ContentBlock
+      <h1>
+        The Porró Open 2023 Ultimate Frisbee Mixed Beach hat tournament October
+        28th-30th - Saturday- Monday
+      </h1>
+      <h2>We are working on our website!!</h2>
+      <p>
+        If you want to stay up to date with the Porró sign up to our{" "}
+        <a href="https://espadisc.us18.list-manage.com/subscribe?u=439ccd3e80bf75e3d5261460b&id=f5913439d3">
+          mailinglist
+        </a>
+      </p>
+      <p>
+        Do trust any of the content that you see here, it is a work in progress
+      </p>
+
+      {/* <ContentBlock
         type="right"
         title={IntroContent.title}
         content={IntroContent.content}
@@ -39,14 +54,14 @@ const Home = () => {
         // button={IntroContent.button}
         icon="fieldsAtSunset.jpg"
         id="intro"
-      />
+      />*/}
       <MiddleBlock
         title={MiddleBlockContent.title}
         content={MiddleBlockContent.text}
         button={MiddleBlockContent.button}
         buttonOnClick={openMailingList()}
       />
-      <ContentBlock
+      {/*<ContentBlock
         type="left"
         title={ProductContent.title}
         content={ProductContent.text}
@@ -61,18 +76,18 @@ const Home = () => {
         icon="GandTBar.jpg"
         id="about"
       />
-      {/* <Contact
+      <Contact
         title={ContactContent.title}
         content={ContactContent.text}
         id="contact"
-      /> */}
-      <ContentBlock
+      /> 
+       <ContentBlock
         type="right"
         title={MissionContent.title}
         content={MissionContent.text}
         icon="manDrinkingPorro.jpg"
         id="mission"
-      />
+    /> */}
     </Container>
   );
 };
