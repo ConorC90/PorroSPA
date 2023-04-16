@@ -35,7 +35,7 @@ export const Extra = styled("section")`
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-bottom: 2rem;
+  // padding-bottom: 1rem;
 `;
 
 export const LogoContainer = styled("div")`
@@ -107,11 +107,11 @@ export const FooterContainer = styled("div")`
   }
 
   @media screen and (max-width: 769px) {
-    width: auto;
+    // width: auto;
 
-    a:not(:last-child) {
-      display: none;
-    }
+    // a:not(:last-child) {
+    //   display: none;
+    // }
   }
 
   div {

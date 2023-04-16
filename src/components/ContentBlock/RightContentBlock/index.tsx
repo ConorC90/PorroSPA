@@ -14,13 +14,17 @@ import {
 
 const RightBlock = ({
   title,
-  content,
-  text,
-  subtext,
+  paragraph1,
+  paragraph2,
+  paragraph3,
+  paragraph4,
+  paragraph5,
+  paragraph6,
   button,
   icon,
   t,
   id,
+  buttonOnClick,
 }: ContentBlockProps) => {
   const scrollTo = (id: string) => {
     const element = document.getElementById(id) as HTMLDivElement;
@@ -31,13 +35,16 @@ const RightBlock = ({
   return (
     <RightBlockContainer>
       <Fade direction="right">
-        <Row justify="space-between" align="middle" id={id}>
+        <Row justify="space-evenly" align="middle" id={id}>
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
-              <h6>{t(title)}</h6>
-              <Content>{t(content)}</Content>
-              <Content>{t(text)}</Content>
-              <Content>{t(subtext)}</Content>
+              <h3>{t(title)}</h3>
+              <Content>{paragraph1}</Content>
+              <Content>{paragraph2}</Content>
+              <Content>{paragraph3}</Content>
+              <Content>{paragraph4}</Content>
+              <Content>{paragraph5}</Content>
+              <Content>{paragraph6}</Content>
               <ButtonWrapper>
                 {typeof button === "object" &&
                   button.map((item: any, id: number) => {
@@ -46,7 +53,7 @@ const RightBlock = ({
                         key={id}
                         color={item.color}
                         fixedWidth={true}
-                        onClick={() => scrollTo("about")}
+                        onClick={() => (window.location.href = item.href)}
                       >
                         {t(item.title)}
                       </Button>

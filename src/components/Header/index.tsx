@@ -1,30 +1,35 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Row, Col, Drawer } from "antd";
 import { withTranslation } from "react-i18next";
 import Container from "../../common/Container";
 import { SvgIcon } from "../../common/SvgIcon";
 import { Button } from "../../common/Button";
+import styled from "styled-components";
 import {
   HeaderSection,
   LogoContainer,
   Burger,
-  NotHidden,
+  BurgerIcon,
   Menu,
   CustomNavLinkSmall,
   Label,
-  Outline,
+  Close,
   Span,
+  BannerText,
+  MobileBannerText,
+  StickyDiv,
 } from "./styles";
+import { Tablet, Desktop } from "../../common/utils/viewPorts";
 
 const Header = ({ t }: any) => {
-  const [visible, setVisibility] = useState(false);
+  const [open, setOpen] = useState(false);
 
   const showDrawer = () => {
-    setVisibility(!visible);
+    setOpen(!open);
   };
 
   const onClose = () => {
-    setVisibility(!visible);
+    setOpen(!open);
   };
 
   const MenuItem = () => {
@@ -32,19 +37,24 @@ const Header = ({ t }: any) => {
       const element = document.getElementById(id) as HTMLDivElement;
       element.scrollIntoView({
         behavior: "smooth",
+        block: "center",
       });
-      setVisibility(false);
+      setOpen(false);
     };
+
     return (
       <>
+        <CustomNavLinkSmall onClick={() => scrollTo("register")}>
+          <Span>{t("Register")}</Span>
+        </CustomNavLinkSmall>
+        <CustomNavLinkSmall onClick={() => scrollTo("dates")}>
+          <Span>{t("Important Dates")}</Span>
+        </CustomNavLinkSmall>
+        <CustomNavLinkSmall onClick={() => scrollTo("cost")}>
+          <Span>{t("Cost")}</Span>
+        </CustomNavLinkSmall>
         <CustomNavLinkSmall onClick={() => scrollTo("about")}>
           <Span>{t("About")}</Span>
-        </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("mission")}>
-          <Span>{t("Mission")}</Span>
-        </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("product")}>
-          <Span>{t("Product")}</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall
           style={{ width: "180px" }}
@@ -62,34 +72,54 @@ const Header = ({ t }: any) => {
     );
   };
 
+  const containerStyle: React.CSSProperties = {
+    color: "red",
+  };
   return (
     <HeaderSection>
-      <Container>
-        <Row justify="space-between">
-          <LogoContainer to="/" aria-label="homepage">
-            <SvgIcon src="PorroLogo.jpg" width="101px" height="84px" />
-          </LogoContainer>
-          <NotHidden>
-            <MenuItem />
-          </NotHidden>
-          <Burger onClick={showDrawer}>
-            <Outline />
-          </Burger>
-        </Row>
-        <Drawer closable={false} visible={visible} onClose={onClose}>
+      <div>
+        <Desktop>
+          <Row justify="space-between">
+            <LogoContainer to="/" aria-label="homepage">
+              <SvgIcon src="PorroLogo.jpg" width="101px" height="84px" />
+            </LogoContainer>
+            <Row justify="space-between">
+              <MenuItem />
+            </Row>
+          </Row>
+        </Desktop>
+        <Tablet>
+          <Row justify="space-between">
+            <div>
+              <LogoContainer to="/" aria-label="homepage">
+                <SvgIcon src="PorroLogo.jpg" width="60px" height="50px" />
+              </LogoContainer>
+            </div>
+            <Burger onClick={showDrawer}>
+              <BurgerIcon />
+            </Burger>
+          </Row>
+          <Row justify="center"></Row>
+        </Tablet>
+        <Drawer
+          style={containerStyle}
+          closable={false}
+          open={open}
+          onClose={onClose}
+        >
           <Col style={{ marginBottom: "2.5rem" }}>
             <Label onClick={onClose}>
               <Col span={12}>
                 <Menu>Menu</Menu>
               </Col>
               <Col span={12}>
-                <Outline />
+                <Close style={{ color: "rgb(46, 24, 106)" }} />
               </Col>
             </Label>
           </Col>
           <MenuItem />
         </Drawer>
-      </Container>
+      </div>
     </HeaderSection>
   );
 };
