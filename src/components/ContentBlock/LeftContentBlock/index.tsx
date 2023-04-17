@@ -43,28 +43,6 @@ const LeftContentBlock = ({
               <Content>{paragraph4}</Content>
               <Content>{paragraph5}</Content>
               <Content>{paragraph6}</Content>
-              {/*               
-              <Content>{t(paragraph1)}</Content>
-              <Content>{t(paragraph2)}</Content>
-              <Content>{t(paragraph3)}</Content>
-              <Content>{t(paragraph4)}</Content>
-              <Content>{t(paragraph5)}</Content>
-              <Content>{t(paragraph6)}</Content> */}
-
-              {/* <ServiceWrapper>
-                <Row justify="space-between">
-                  {typeof section === "object" &&
-                    section.map((item: any, id: number) => {
-                      return (
-                        <Col key={id} span={11}>
-                          <SvgIcon src={item.icon} width="60px" height="60px" />
-                          <MinTitle>{t(item.title)}</MinTitle>
-                          <MinPara>{t(item.content)}</MinPara>
-                        </Col>
-                      );
-                    })}
-                </Row>
-              </ServiceWrapper> */}
             </ContentWrapper>
           </Col>
         </Row>

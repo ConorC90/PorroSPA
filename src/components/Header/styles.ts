@@ -6,6 +6,7 @@ export const HeaderSection = styled("header")`
   padding: 0.5rem 0.5rem;
   position: fixed;
   width: 100%;
+  max-width: 100vw;
   z-index: 2;
   .ant-row-space-between {
     align-items: center;
