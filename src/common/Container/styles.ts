@@ -22,9 +22,4 @@ export const StyledContainer = styled("div")<any>`
     max-width: 100%;
     padding: 5px 18px;
   }
-
-  @media only screen and (max-width: 340px) {
-    max-width: 100%;
-    padding: 95px 18px;
-  }
 `;
