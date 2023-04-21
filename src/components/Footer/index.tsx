@@ -36,17 +36,20 @@ const Footer = ({ t }: any) => {
       <FooterSection>
         <Container>
           <Row justify="center" align="top">
-            <Col lg={10} md={10} sm={12} xs={12}>
+            <Col lg={12} md={12} sm={24} xs={24}>
               <Language>{t("Address")}</Language>
               <Para>Pg. Marítim, 322,</Para>
               <Para>Castelldefels,</Para>
               <Para>Barcelona.</Para>
-              {/* <iframe
+            </Col>
+
+            <Col lg={12} md={12} sm={24} xs={24}>
+              <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2595.76342701706!2d1.956461700526835!3d41.26485987522879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a483f52d288c73%3A0x82caefeae25644bb!2sPlatja%20de%20Castelldefels!5e0!3m2!1sen!2ses!4v1679508744718!5m2!1sen!2ses"
-                width="400"
-                height="300"
+                width="100%"
+                height="300px"
                 loading="lazy"
-              ></iframe> */}
+              ></iframe>
               {/* <Label htmlFor="select-lang">{t("Language")}</Label>
               <LanguageSwitchContainer>
                 <LanguageSwitch onClick={() => handleChange("en")}>
@@ -67,9 +70,6 @@ const Footer = ({ t }: any) => {
                 </LanguageSwitch>
               </LanguageSwitchContainer> */}
             </Col>
-            {/* <Col lg={6} md={6} sm={12} xs={12}>
-            
-            </Col> */}
           </Row>
         </Container>
       </FooterSection>

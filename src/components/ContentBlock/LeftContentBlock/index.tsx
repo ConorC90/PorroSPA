@@ -24,7 +24,7 @@ const LeftContentBlock = ({
 }: ContentBlockProps) => {
   return (
     <LeftContentSection>
-      <Fade direction="left">
+      <Fade triggerOnce direction="left">
         <Row justify="space-evenly" align="middle" id={id}>
           <Col lg={11} md={11} sm={12} xs={24}>
             <Image src={icon} width="100%" height="100%" />
@@ -32,12 +32,7 @@ const LeftContentBlock = ({
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
               <h3>{t(title)}</h3>
-
               {content}
-              {/* <Content>{paragraph3}</Content>
-              <Content>{paragraph4}</Content>
-              <Content>{paragraph5}</Content>
-              <Content>{paragraph6}</Content> */}
             </ContentWrapper>
           </Col>
         </Row>
