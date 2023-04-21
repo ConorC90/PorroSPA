@@ -6,10 +6,5 @@ export interface ContentBlockProps {
   id: string;
   type?: string;
   buttonOnClick?: string;
-  paragraph1?: any;
-  paragraph2?: string;
-  paragraph3?: string;
-  paragraph4?: string;
-  paragraph5?: string;
-  paragraph6?: string;
+  content?: any;
 }

@@ -7,8 +7,12 @@ import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
 import DateContent from "../../content/DateContent.json";
 import InfoBanner from "../../components/InfoBanner";
+import IntroBlockContent from "../../content/IntroBlockContent";
+import RegisterBlockContent from "../../content/RegisterBlockContent";
+import DatesBlockContent from "../../content/DatesBlockContent";
+import AboutBlockContent from "../../content/AboutBlockContent";
+import CostsBlockContent from "../../content/CostsBlockContent";
 
-const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
@@ -24,14 +28,6 @@ console.log(
   "color: yellow; font-size: 35px; background-color: green;"
 );
 
-const openMailingList = () => {
-  // return (window.location.href = "http://eepurl.com/h8pUib");
-};
-const openRestierForm = () => {
-  return (window.location.href =
-    "https://docs.google.com/forms/d/e/1FAIpQLSdneZnVzUndli87Kz27hAYJyAJL6MIU2eeWUHWw-wSQGFM6-Q/viewform?usp=sf_link");
-};
-
 const Home = () => {
   return (
     <Container>
@@ -40,9 +36,7 @@ const Home = () => {
       <ContentBlock
         type="left"
         title={IntroContent.title}
-        paragraph1={IntroContent.paragraph1}
-        paragraph2={IntroContent.paragraph2}
-        paragraph3={IntroContent.paragraph3}
+        content={IntroBlockContent()}
         icon="manDrinkingPorro.jpg"
         id="intro"
       />
@@ -50,17 +44,11 @@ const Home = () => {
         title={MiddleBlockContent.title}
         content={MiddleBlockContent.text}
         button={MiddleBlockContent.button}
-        buttonOnClick={openMailingList()}
       />
       <ContentBlock
         type="right"
         title={ProductContent.title}
-        paragraph1={ProductContent.paragraph1}
-        paragraph2={ProductContent.paragraph2}
-        // paragraph3={ProductContent.paragraph3}
-        // paragraph4={ProductContent.paragraph4}
-        // paragraph5={ProductContent.paragraph5}
-        // paragraph6={ProductContent.paragraph6}
+        content={RegisterBlockContent()}
         icon="girlWithBeer.jpg"
         id="register"
         button={[
@@ -73,12 +61,7 @@ const Home = () => {
       <ContentBlock
         type="left"
         title={DateContent.title}
-        paragraph1={DateContent.paragraph1}
-        paragraph2={DateContent.paragraph2}
-        paragraph3={DateContent.paragraph3}
-        paragraph4={DateContent.paragraph4}
-        paragraph5={DateContent.paragraph5}
-        paragraph6={DateContent.paragraph6}
+        content={DatesBlockContent()}
         icon="childPainting.jpg"
         id="dates"
       />
@@ -86,18 +69,14 @@ const Home = () => {
       <ContentBlock
         type="right"
         title={MissionContent.title}
-        paragraph1={MissionContent.paragraph1}
-        paragraph2={MissionContent.paragraph2}
-        paragraph3={MissionContent.paragraph3}
-        paragraph4={MissionContent.paragraph4}
-        paragraph5={MissionContent.paragraph5}
+        content={CostsBlockContent()}
         icon="fieldsAtSunset.jpg"
         id="cost"
       />
       <ContentBlock
         type="left"
         title={AboutContent.title}
-        paragraph1={AboutContent.paragraph1}
+        content={AboutBlockContent()}
         icon="GandTBar.jpg"
         id="about"
       />
