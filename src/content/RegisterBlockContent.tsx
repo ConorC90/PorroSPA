@@ -9,9 +9,9 @@ export default function RegisterBlockContnet() {
         Castelldefels near Barcelona.
       </p>
       <p>
-        Along with 3 days of ultimate, you'll have the opportunity to, party on
-        the beach, meet new people, enjoy free beer, and a Sunday night 90s
-        theamed fancy dress party. Don't miss out on this unique and
+        Along with 3 days of ultimate, you'll have the opportunity to party on
+        the beach, meet new people, enjoy free cans, and a Sunday night (90s
+        themed) fancy dress party. Don't miss out on this unique and
         unforgettable beach ultimate experience!
       </p>
     </>

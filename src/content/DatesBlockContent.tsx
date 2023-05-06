@@ -5,7 +5,7 @@ export default function DatesContent() {
   return (
     <UnorderList>
       <li>
-        <b>Tournament:</b> October 28th-30th Saturday-Monday
+        <b>Tournament:</b> October 28th-30th <i>(Saturday-Monday)</i>
       </li>
       <li>
         <b>Registration open:</b> May 1st

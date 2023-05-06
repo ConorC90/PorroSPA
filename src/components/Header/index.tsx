@@ -1,10 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Row, Col, Drawer } from "antd";
 import { withTranslation } from "react-i18next";
-import Container from "../../common/Container";
 import { SvgIcon } from "../../common/SvgIcon";
 import { Button } from "../../common/Button";
-import styled from "styled-components";
+
 import {
   HeaderSection,
   LogoContainer,
@@ -15,9 +14,6 @@ import {
   Label,
   Close,
   Span,
-  BannerText,
-  MobileBannerText,
-  StickyDiv,
 } from "./styles";
 import { Tablet, Desktop } from "../../common/utils/viewPorts";
 
@@ -35,6 +31,7 @@ const Header = ({ t }: any) => {
   const MenuItem = () => {
     const scrollTo = (id: string) => {
       const element = document.getElementById(id) as HTMLDivElement;
+
       element.scrollIntoView({
         behavior: "smooth",
         block: "center",
@@ -55,6 +52,9 @@ const Header = ({ t }: any) => {
         </CustomNavLinkSmall>
         <CustomNavLinkSmall onClick={() => scrollTo("about")}>
           <Span>{t("About")}</Span>
+        </CustomNavLinkSmall>
+        <CustomNavLinkSmall onClick={() => scrollTo("contact")}>
+          <Span>{t("Contact")}</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall
           style={{ width: "180px" }}
@@ -79,9 +79,9 @@ const Header = ({ t }: any) => {
     <HeaderSection>
       <div>
         <Desktop>
-          <Row justify="space-between">
+          <Row justify="space-around">
             <LogoContainer to="/" aria-label="homepage">
-              <SvgIcon src="PorroLogo.jpg" width="101px" height="84px" />
+              <SvgIcon src="porroLogoPlain.jpg" width="90px" height="85px" />
             </LogoContainer>
             <Row justify="space-between">
               <MenuItem />
@@ -92,7 +92,7 @@ const Header = ({ t }: any) => {
           <Row justify="space-between">
             <div>
               <LogoContainer to="/" aria-label="homepage">
-                <SvgIcon src="PorroLogo.jpg" width="60px" height="50px" />
+                <SvgIcon src="porroLogoPlain.jpg" width="55px" height="50px" />
               </LogoContainer>
             </div>
             <Burger onClick={showDrawer}>
