@@ -6,8 +6,8 @@ export default function CostsBlockContent() {
     <>
       <p>Player fee includes:</p>
       <UnorderList>
-        <li>3 days of mixed beach ultimate</li>
-        <li>Free Cans!</li>
+        <li>3 days of mixed Beach Ultimate</li>
+        <li>Free cans!</li>
         <li>Fruit and Tapas</li>
         <li>Parties</li>
       </UnorderList>

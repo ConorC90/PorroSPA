@@ -2,15 +2,15 @@ export default function BravasBlockContent() {
   return (
     <>
       <p>
-        Bravas was founded in 1998, and we have been hosting The Porró on our
-        home beach of Castelafells ever since. All proceeds from The Porró get
+        Bravas was founded in 1998 and we have been hosting the Porró on our
+        home beach of Castelldefels ever since. All proceeds from the Porró are
         directly reinvested into our club.
       </p>
       <p>
-        Every year (with one covid exception) we have been pouring our energy
-        into The Porró, to provide our participants with the best ultimate
-        experience that Castelldefels offer. It is our pleasure to share our
-        beach with ultimate players from all over the world.
+        Every year (with one Covid exception) we have been pouring our energy
+        into the Porró, to provide our participants with the best Ultimate
+        experience that Castelldefels has to offer. It is our pleasure to share
+        our beach with Ultimate players from all over the world.
       </p>
       <p>
         If you are interested in learning more about our club you can check out
@@ -20,7 +20,7 @@ export default function BravasBlockContent() {
         </a>
       </p>
       <p>
-        <i>Once a Bravas always a Bravas</i>
+        <i>Once a Bravas always a Bravas!</i>
       </p>
     </>
   );
