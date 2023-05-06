@@ -1,21 +1,42 @@
 import { Row, Col } from "antd";
 import { withTranslation } from "react-i18next";
 import { SvgIcon } from "../../common/SvgIcon";
-import { Image } from "../../common/Image";
 import Container from "../../common/Container";
-
-import i18n from "i18next";
+// import i18n from "i18next";
 import { FooterSection, Extra, Para, Language } from "./styles";
+import styled from "styled-components";
 
 interface SocialLinkProps {
   href: string;
   src: string;
 }
 
+export const FooterContainer = styled("div")<any>`
+  max-width: 1500px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10px;
+  border-top: ${(p) => (p.border ? "1px solid #CDD1D4" : "")};
+  @media only screen and (min-width: 1024px) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media only screen and (max-width: 1025px) {
+    max-width: calc(100% - 38px);
+    padding: 5px 18px;
+  }
+
+  @media only screen and (max-width: 500px) {
+    max-width: 100%;
+    padding: 5px 18px;
+  }
+`;
+
 const Footer = ({ t }: any) => {
-  const handleChange = (language: string) => {
-    i18n.changeLanguage(language);
-  };
+  // const handleChange = (language: string) => {
+  //   i18n.changeLanguage(language);
+  // };
 
   const SocialLink = ({ href, src }: SocialLinkProps) => {
     return (
@@ -34,13 +55,24 @@ const Footer = ({ t }: any) => {
   return (
     <>
       <FooterSection>
-        <Container>
+        <FooterContainer>
           <Row justify="center" align="top">
             <Col lg={12} md={12} sm={24} xs={24}>
-              <Language>{t("Address")}</Language>
-              <Para>Pg. Marítim, 322,</Para>
-              <Para>Castelldefels,</Para>
-              <Para>Barcelona.</Para>
+              <Col lg={12} md={12} sm={24} xs={24}>
+                <a
+                  href="https://beachultimate.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <SvgIcon src={"BULA.png"} width="319px" height="146px" />
+                </a>
+              </Col>
+              <Col lg={12} md={12} sm={24} xs={24}>
+                <Language>{t("Address")}</Language>
+                <Para>Pg. Marítim, 322,</Para>
+                <Para>Castelldefels,</Para>
+                <Para>Barcelona.</Para>
+              </Col>
             </Col>
 
             <Col lg={12} md={12} sm={24} xs={24}>
@@ -49,7 +81,9 @@ const Footer = ({ t }: any) => {
                 width="100%"
                 height="300px"
                 loading="lazy"
+                title="TournamentLocation"
               ></iframe>
+
               {/* <Label htmlFor="select-lang">{t("Language")}</Label>
               <LanguageSwitchContainer>
                 <LanguageSwitch onClick={() => handleChange("en")}>
@@ -71,7 +105,18 @@ const Footer = ({ t }: any) => {
               </LanguageSwitchContainer> */}
             </Col>
           </Row>
-        </Container>
+          <Row>
+            <Para>
+              <a
+                href="https://www.freeprivacypolicy.com/live/06572ab6-89aa-49c5-9780-4375484aec14"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <u>Privacy Policy</u>
+              </a>
+            </Para>
+          </Row>
+        </FooterContainer>
       </FooterSection>
       <Extra>
         <Container border={true}>

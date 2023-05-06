@@ -4,7 +4,6 @@ import MiddleBlockContent from "../../content/MiddleBlockContent.json";
 import AboutContent from "../../content/AboutContent.json";
 import MissionContent from "../../content/MissionContent.json";
 import ProductContent from "../../content/ProductContent.json";
-import ContactContent from "../../content/ContactContent.json";
 import DateContent from "../../content/DateContent.json";
 import InfoBanner from "../../components/InfoBanner";
 import IntroBlockContent from "../../content/IntroBlockContent";
@@ -12,6 +11,8 @@ import RegisterBlockContent from "../../content/RegisterBlockContent";
 import DatesBlockContent from "../../content/DatesBlockContent";
 import AboutBlockContent from "../../content/AboutBlockContent";
 import CostsBlockContent from "../../content/CostsBlockContent";
+import BravasBlockContent from "../../content/BravasBlockContent";
+import ContactUsBlockContent from "../../content/ContactUsBlockContent";
 
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
@@ -19,13 +20,8 @@ const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
 
 console.log(
-  "%c What are you doing here? ",
-  "color: yellow; font-size: 35px; background-color: green;"
-);
-
-console.log(
-  "%c You must think that you are very clever.... ",
-  "color: yellow; font-size: 35px; background-color: green;"
+  "%cBRAVAS HOST THE BEST TOURNAMENT IN CASTELLDEFELS!",
+  "font-weight: bold; font-size: 50px;color: red; text-shadow: 3px 3px 0 rgb(217,31,38) , 6px 6px 0 rgb(226,91,14) , 9px 9px 0 rgb(245,221,8) , 12px 12px 0 rgb(5,148,68) , 15px 15px 0 rgb(2,135,206) , 18px 18px 0 rgb(4,77,145) , 21px 21px 0 rgb(42,21,113); margin-bottom: 12px; padding: 5%"
 );
 
 const Home = () => {
@@ -37,7 +33,7 @@ const Home = () => {
         type="left"
         title={IntroContent.title}
         content={IntroBlockContent()}
-        icon="manDrinkingPorro.jpg"
+        icon="girlWithBeer.jpg"
         id="intro"
       />
       <MiddleBlock
@@ -49,7 +45,7 @@ const Home = () => {
         type="right"
         title={ProductContent.title}
         content={RegisterBlockContent()}
-        icon="girlWithBeer.jpg"
+        icon="manDrinkingPorro.jpg"
         id="register"
         button={[
           {
@@ -70,14 +66,28 @@ const Home = () => {
         type="right"
         title={MissionContent.title}
         content={CostsBlockContent()}
-        icon="fieldsAtSunset.jpg"
+        icon="womanDivingForFirsbee.jpg"
         id="cost"
       />
       <ContentBlock
         type="left"
         title={AboutContent.title}
         content={AboutBlockContent()}
-        icon="GandTBar.jpg"
+        icon="porroSidelineCrowed.jpg"
+        id="about"
+      />
+      <ContentBlock
+        type="right"
+        title={"Contact Us"}
+        content={ContactUsBlockContent()}
+        icon="manInSand.jpg"
+        id="contact"
+      />
+      <ContentBlock
+        type="left"
+        title={"Bravas"}
+        content={BravasBlockContent()}
+        icon="fieldsAtSunset.jpg"
         id="about"
       />
     </Container>
