@@ -59,13 +59,15 @@ const Footer = ({ t }: any) => {
           <Row justify="center" align="top">
             <Col lg={12} md={12} sm={24} xs={24}>
               <Col lg={12} md={12} sm={24} xs={24}>
-                <a
-                  href="https://beachultimate.org/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <SvgIcon src={"BULA.png"} width="319px" height="146px" />
-                </a>
+                <Row justify="center" align="top">
+                  <a
+                    href="https://beachultimate.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <SvgIcon src={"BULA.png"} width="319px" height="146px" />
+                  </a>
+                </Row>
               </Col>
               <Col lg={12} md={12} sm={24} xs={24}>
                 <Language>{t("Address")}</Language>
@@ -105,7 +107,7 @@ const Footer = ({ t }: any) => {
               </LanguageSwitchContainer> */}
             </Col>
           </Row>
-          <Row>
+          <Row align="bottom">
             <Para>
               <a
                 href="https://www.freeprivacypolicy.com/live/06572ab6-89aa-49c5-9780-4375484aec14"
