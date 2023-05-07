@@ -4,7 +4,10 @@ export default function IntroContent() {
   return (
     <>
       <p>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdneZnVzUndli87Kz27hAYJyAJL6MIU2eeWUHWw-wSQGFM6-Q/viewform">
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdneZnVzUndli87Kz27hAYJyAJL6MIU2eeWUHWw-wSQGFM6-Q/viewform"
+          target="_blank"
+        >
           <u>Register now</u>
         </a>{" "}
         for the Porró XXV

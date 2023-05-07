@@ -19,7 +19,7 @@ const RightBlock = ({
   icon,
   t,
   id,
-  buttonOnClick,
+  cite,
 }: ContentBlockProps) => {
   const scrollTo = (id: string) => {
     const element = document.getElementById(id) as HTMLDivElement;
@@ -44,7 +44,7 @@ const RightBlock = ({
                         key={id}
                         color={item.color}
                         fixedWidth={true}
-                        onClick={() => (window.location.href = item.href)}
+                        onClick={() => window.open(item.href)}
                       >
                         {t(item.title)}
                       </Button>
@@ -55,6 +55,7 @@ const RightBlock = ({
           </Col>
           <Col lg={11} md={11} sm={12} xs={24}>
             <Image src={icon} width="100%" height="100%" />
+            {cite && <cite>{cite}</cite>}
           </Col>
         </Row>
       </Fade>

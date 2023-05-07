@@ -36,9 +36,7 @@ const MiddleBlock = ({
             {button && (
               <Button
                 name="submit"
-                onClick={() =>
-                  (window.location.href = "http://eepurl.com/h8pUib")
-                }
+                onClick={() => window.open("http://eepurl.com/h8pUib")}
               >
                 {t(button)}
               </Button>

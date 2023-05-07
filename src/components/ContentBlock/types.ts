@@ -7,4 +7,5 @@ export interface ContentBlockProps {
   type?: string;
   buttonOnClick?: string;
   content?: any;
+  cite?: string;
 }

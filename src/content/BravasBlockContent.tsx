@@ -15,7 +15,7 @@ export default function BravasBlockContent() {
       <p>
         If you are interested in learning more about our club you can check out
         our{" "}
-        <a href="https://bravas.espadisc.org/index.php">
+        <a href="https://bravas.espadisc.org/index.php" target="_blank">
           <u>website</u>
         </a>
       </p>

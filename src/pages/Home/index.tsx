@@ -35,6 +35,7 @@ const Home = () => {
         content={IntroBlockContent()}
         icon="girlWithBeer.jpg"
         id="intro"
+        cite="Photo by: Bettina Koerner"
       />
       <MiddleBlock
         title={MiddleBlockContent.title}
@@ -47,6 +48,7 @@ const Home = () => {
         content={RegisterBlockContent()}
         icon="manDrinkingPorro.jpg"
         id="register"
+        cite="Photo by: Bettina Koerner"
         button={[
           {
             title: "Register",
@@ -60,6 +62,7 @@ const Home = () => {
         content={DatesBlockContent()}
         icon="childPainting.jpg"
         id="dates"
+        cite="Photo by: Bettina Koerner"
       />
 
       <ContentBlock
@@ -68,6 +71,7 @@ const Home = () => {
         content={CostsBlockContent()}
         icon="womanDivingForFirsbee.jpg"
         id="cost"
+        cite="Photo by: Tuukka Koistinen"
       />
       <ContentBlock
         type="left"
@@ -75,6 +79,7 @@ const Home = () => {
         content={AboutBlockContent()}
         icon="porroSidelineCrowed.jpg"
         id="about"
+        cite="Photo by: Tuukka Koistinen"
       />
       <ContentBlock
         type="right"
@@ -82,6 +87,7 @@ const Home = () => {
         content={ContactUsBlockContent()}
         icon="manInSand.jpg"
         id="contact"
+        cite="Photo by: Tuukka Koistinen"
       />
       <ContentBlock
         type="left"
@@ -89,6 +95,7 @@ const Home = () => {
         content={BravasBlockContent()}
         icon="fieldsAtSunset.jpg"
         id="about"
+        cite="Photo by: Bettina Koerner"
       />
     </Container>
   );
