@@ -4,23 +4,15 @@ import { SvgIcon } from "../../../common/SvgIcon";
 import { Image } from "../../../common/Image";
 import { ContentBlockProps } from "../types";
 import { Fade } from "react-awesome-reveal";
-import {
-  LeftContentSection,
-  Content,
-  ContentWrapper,
-  ServiceWrapper,
-  MinTitle,
-  MinPara,
-} from "./styles";
+import { LeftContentSection, ContentWrapper } from "./styles";
 
 const LeftContentBlock = ({
   title,
   content,
-  button,
   icon,
   t,
   id,
-  buttonOnClick,
+  cite,
 }: ContentBlockProps) => {
   return (
     <LeftContentSection>
@@ -28,6 +20,7 @@ const LeftContentBlock = ({
         <Row justify="space-evenly" align="middle" id={id}>
           <Col lg={11} md={11} sm={12} xs={24}>
             <Image src={icon} width="100%" height="100%" />
+            {cite && <cite>{cite}</cite>}
           </Col>
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>

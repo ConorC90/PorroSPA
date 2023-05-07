@@ -16,7 +16,10 @@ export default function AboutContent() {
       </p>
       <p>
         It's a celebration you won't want to miss.{" "}
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdneZnVzUndli87Kz27hAYJyAJL6MIU2eeWUHWw-wSQGFM6-Q/viewform">
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdneZnVzUndli87Kz27hAYJyAJL6MIU2eeWUHWw-wSQGFM6-Q/viewform"
+          target="_blank"
+        >
           <u>Sign up now</u>
         </a>{" "}
         to join in on the fun!
