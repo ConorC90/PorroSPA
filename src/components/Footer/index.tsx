@@ -128,12 +128,12 @@ const Footer = ({ t }: any) => {
             style={{ padding: "1rem" }}
           >
             <SocialLink
-              href="https://www.instagram.com/bravasultimate/"
-              src="instagram.svg"
+              href="https://www.instagram.com/porro_open_hat/"
+              src="instagram-white.png"
             />
             <SocialLink
               href="https://www.facebook.com/people/Porr%C3%B3-Open/100064767934714/"
-              src="facebook.png"
+              src="facebook-white.png"
             />
           </Row>
         </Container>
