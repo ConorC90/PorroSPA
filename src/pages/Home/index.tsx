@@ -49,12 +49,12 @@ const Home = () => {
         icon="manDrinkingPorro.jpg"
         id="register"
         cite="Photo by: Bettina Koerner"
-        button={[
-          {
-            title: 'Register',
-            href: 'https://docs.google.com/forms/d/e/1FAIpQLSdneZnVzUndli87Kz27hAYJyAJL6MIU2eeWUHWw-wSQGFM6-Q/viewform?usp=sf_link',
-          },
-        ]}
+        // button={[
+        //   {
+        //     title: 'Register',
+        //     href: 'https://docs.google.com/forms/d/e/1FAIpQLSdneZnVzUndli87Kz27hAYJyAJL6MIU2eeWUHWw-wSQGFM6-Q/viewform?usp=sf_link',
+        //   },
+        // ]}
       />
       <ContentBlock
         type="left"
