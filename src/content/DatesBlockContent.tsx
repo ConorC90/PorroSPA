@@ -1,11 +1,11 @@
-import React from "react";
-import { UnorderList } from "../components/ContentBlock/styles";
+import React from 'react';
+import { UnorderList } from '../components/ContentBlock/styles';
 
 export default function DatesContent() {
   return (
     <UnorderList>
       <li>
-        <b>Tournament:</b> October 28th-30th <i>(Saturday-Monday)</i>
+        <b>Tournament:</b> November 1st-3rd <i>(Friday - Sunday)</i>
       </li>
       <li>
         <b>Registration open:</b> May 1st
@@ -25,3 +25,4 @@ export default function DatesContent() {
     </UnorderList>
   );
 }
+

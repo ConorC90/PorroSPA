@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export default function IntroContent() {
   return (
@@ -8,13 +8,14 @@ export default function IntroContent() {
           href="https://docs.google.com/forms/d/e/1FAIpQLSdneZnVzUndli87Kz27hAYJyAJL6MIU2eeWUHWw-wSQGFM6-Q/viewform"
           target="_blank"
         >
-          <u>Register now</u>
-        </a>{" "}
-        for the Porró XXV
+          <u>Register in May</u>
+        </a>{' '}
+        for the Porró XXVI
       </p>
-      <p>October 28th-30th</p>
-      <p>Saturday- Monday</p>
+      <p>Nonvember 1st-3rd</p>
+      <p>Friday - Sunday</p>
       <p>Castelldefels, Barcelona, Spain</p>
     </>
   );
 }
+

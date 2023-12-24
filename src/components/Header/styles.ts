@@ -1,8 +1,8 @@
-import styled from "styled-components";
-import { Link } from "react-router-dom";
-import { MenuOutlined, CloseOutlined } from "@ant-design/icons";
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import { MenuOutlined, CloseOutlined } from '@ant-design/icons';
 
-export const HeaderSection = styled("header")`
+export const HeaderSection = styled('header')`
   padding: 0.5rem 0.5rem;
   position: fixed;
   width: 100%;
@@ -13,8 +13,8 @@ export const HeaderSection = styled("header")`
     text-align: center;
   }
   background-color: #880201;
-  @media only screen and (max-width: 411px) {
-    padding: 0.5rem 0.5rem;
+  @media only screen and (max-width: 1024px) {
+    padding: 0.5rem 2rem;
   }
 `;
 
@@ -22,13 +22,13 @@ export const LogoContainer = styled(Link)`
   display: flex;
 `;
 
-export const NavLink = styled("div")`
+export const NavLink = styled('div')`
   display: inline-block;
   text-align: center;
   font-weight: 700;
 `;
 
-export const CustomNavLink = styled("div")`
+export const CustomNavLink = styled('div')`
   width: 203px;
   display: inline-block;
 
@@ -41,37 +41,37 @@ export const CustomNavLink = styled("div")`
   }
 `;
 
-export const ContactWrapper = styled("div")<any>`
+export const ContactWrapper = styled('div')<any>`
   cursor: pointer;
-  width: ${(p) => (p.width ? "100%" : "110px")};
+  width: ${p => (p.width ? '100%' : '110px')};
   font-weight: 700;
   text-align: center;
   border-radius: 1.25rem;
   display: inline-block;
 `;
 
-export const Burger = styled("div")`
+export const Burger = styled('div')`
   svg {
     fill: white;
   }
 `;
 
-export const Mobile = styled("div")`
+export const Mobile = styled('div')`
   @media only screen and (max-width: 420px) {
     display: none;
   }
 `;
-export const Tablet = styled("div")`
+export const Tablet = styled('div')`
   @media only screen and (max-width: 420px) {
     display: none;
   }
 `;
-export const Desktop = styled("div")`
+export const Desktop = styled('div')`
   @media only screen and (max-width: 420px) {
     display: none;
   }
 `;
-export const StickyDiv = styled("div")`
+export const StickyDiv = styled('div')`
   // position: fixed;
   // top: 0px;
   z-index: 1;
@@ -81,7 +81,7 @@ export const StickyDiv = styled("div")`
   align-items: center;
 `;
 
-export const Menu = styled("h5")`
+export const Menu = styled('h5')`
   font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
@@ -99,7 +99,7 @@ export const CustomNavLinkSmall = styled(NavLink)`
   }
 `;
 
-export const Label = styled("span")`
+export const Label = styled('span')`
   font-weight: 500;
   color: #404041;
   text-align: right;
@@ -116,7 +116,7 @@ export const BurgerIcon = styled(MenuOutlined)<any>`
   font-size: 22px;
 `;
 
-export const Span = styled("span")`
+export const Span = styled('span')`
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   &:hover,
@@ -129,7 +129,7 @@ export const Span = styled("span")`
     color: rgb(46, 24, 106);
   }
 `;
-export const BannerText = styled("h2")`
+export const BannerText = styled('h2')`
   font-size: 2.5rem;
   font-weight: 800;
   text-align: center;
@@ -138,9 +138,18 @@ export const BannerText = styled("h2")`
   color: white;
   mar
 `;
-export const MobileBannerText = styled("h2")`
+export const MobileBannerText = styled('h2')`
   font-size: 1.5rem;
   font-weight: 800;
   text-align: center;
   margin-bottom: 0px;
 `;
+
+export const BurgerWrapper = styled('div')`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+`;
+
