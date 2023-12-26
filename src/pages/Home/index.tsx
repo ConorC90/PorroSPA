@@ -33,7 +33,7 @@ const Home = () => {
         type="left"
         title={IntroContent.title}
         content={IntroBlockContent()}
-        icon="womanDivingForFirsbee.jpg"
+        icon="girlWithBeerInHand.jpg"
         id="intro"
         cite="Photo by: Bettina Koerner"
       />
