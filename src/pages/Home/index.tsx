@@ -33,7 +33,7 @@ const Home = () => {
         type="left"
         title={IntroContent.title}
         content={IntroBlockContent()}
-        icon="girlWithBeerInHand.jpg"
+        icon="girlWithBeer.jpg"
         id="intro"
         cite="Photo by: Bettina Koerner"
       />
@@ -46,7 +46,7 @@ const Home = () => {
         type="right"
         title={ProductContent.title}
         content={RegisterBlockContent()}
-        icon="manDrinkingPorroOnBeach.jpg"
+        icon="manDrinkingPorro.jpg"
         id="register"
         cite="Photo by: Bettina Koerner"
         // button={[
