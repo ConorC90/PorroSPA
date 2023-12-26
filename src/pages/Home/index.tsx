@@ -46,7 +46,7 @@ const Home = () => {
         type="right"
         title={ProductContent.title}
         content={RegisterBlockContent()}
-        icon="manDrinkingPorro.jpg"
+        icon="manPointingWithFrisbee.jpg"
         id="register"
         cite="Photo by: Bettina Koerner"
         // button={[
