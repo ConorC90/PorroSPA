@@ -1,4 +1,7 @@
+import { ReactNode } from 'react';
+
 export interface ContentBlockProps {
+  image?: ReactNode;
   icon?: string;
   title?: string;
   button?: any;
@@ -8,4 +11,7 @@ export interface ContentBlockProps {
   buttonOnClick?: string;
   content?: any;
   cite?: string;
+  fadeDirection?: any;
+  altText?: string;
 }
+
