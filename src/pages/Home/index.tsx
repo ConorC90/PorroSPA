@@ -1,10 +1,5 @@
 import { lazy } from 'react';
-import IntroContent from '../../content/IntroContent.json';
 import MiddleBlockContent from '../../content/MiddleBlockContent.json';
-import AboutContent from '../../content/AboutContent.json';
-import MissionContent from '../../content/MissionContent.json';
-import ProductContent from '../../content/ProductContent.json';
-import DateContent from '../../content/DateContent.json';
 import InfoBanner from '../../components/InfoBanner';
 import IntroBlockContent from '../../content/IntroBlockContent';
 import RegisterBlockContent from '../../content/RegisterBlockContent';
@@ -13,11 +8,12 @@ import AboutBlockContent from '../../content/AboutBlockContent';
 import CostsBlockContent from '../../content/CostsBlockContent';
 import BravasBlockContent from '../../content/BravasBlockContent';
 import ContactUsBlockContent from '../../content/ContactUsBlockContent';
+import { ImageNew } from '../../common/Image';
 
 const MiddleBlock = lazy(() => import('../../components/MiddleBlock'));
 const Container = lazy(() => import('../../common/Container'));
 const ScrollToTop = lazy(() => import('../../common/ScrollToTop'));
-const ContentBlock = lazy(() => import('../../components/ContentBlock'));
+const ContentBlockMain = lazy(() => import('../../components/ContentBlock/ContentBlockMain'));
 
 console.log(
   '%cBRAVAS HOST THE BEST TOURNAMENT IN CASTELLDEFELS!',
@@ -29,73 +25,119 @@ const Home = () => {
     <Container>
       <ScrollToTop />
       <InfoBanner />
-      <ContentBlock
-        type="left"
-        title={IntroContent.title}
+      <ContentBlockMain
         content={IntroBlockContent()}
-        icon="girlWithBeer.jpg"
         id="intro"
-        cite="Photo by: Bettina Koerner"
+        image={
+          <ImageNew
+            src={'girlWithBeer.jpg'}
+            width="100%"
+            height="100%"
+            altText="girl With Beer at ultimate frisbee hat tournament castelldefels"
+            loading="eager"
+            cite="Photo by: Bettina Koerner"
+          />
+        }
+        fadeDirection="left"
       />
       <MiddleBlock
         title={MiddleBlockContent.title}
         content={MiddleBlockContent.text}
         button={MiddleBlockContent.button}
       />
-      <ContentBlock
-        type="right"
-        title={ProductContent.title}
+      <ContentBlockMain
         content={RegisterBlockContent()}
-        icon="manDrinkingPorro.jpg"
         id="register"
-        cite="Photo by: Bettina Koerner"
-        // button={[
-        //   {
-        //     title: 'Register',
-        //     href: 'https://docs.google.com/forms/d/e/1FAIpQLSdneZnVzUndli87Kz27hAYJyAJL6MIU2eeWUHWw-wSQGFM6-Q/viewform?usp=sf_link',
-        //   },
-        // ]}
+        image={
+          <ImageNew
+            src={'manDrinkingPorro.jpg'}
+            width="100%"
+            height="100%"
+            altText="Man drinking from a Porró at ultimate frisbee hat tournament"
+            loading="lazy"
+            cite="Photo by: Bettina Koerner"
+          />
+        }
+        fadeDirection="right"
       />
-      <ContentBlock
-        type="left"
-        title={DateContent.title}
+      <ContentBlockMain
         content={DatesBlockContent()}
-        icon="childPainting.jpg"
         id="dates"
-        cite="Photo by: Bettina Koerner"
+        image={
+          <ImageNew
+            src={'childPainting.jpg'}
+            width="100%"
+            height="100%"
+            altText="Man and Child painting at ultimate frisbee hat tournament"
+            loading="lazy"
+            cite="Photo by: Bettina Koerner"
+          />
+        }
+        fadeDirection="left"
       />
 
-      <ContentBlock
-        type="right"
-        title={MissionContent.title}
+      <ContentBlockMain
         content={CostsBlockContent()}
-        icon="womanDivingForFirsbee.jpg"
         id="cost"
-        cite="Photo by: Tuukka Koistinen"
+        image={
+          <ImageNew
+            src={'womanDivingForFirsbee.jpg'}
+            width="100%"
+            height="100%"
+            altText="Woman diving for ultimate frisbee in Castelldefels beach"
+            loading="lazy"
+            cite="Photo by: Tuukka Koistinen"
+          />
+        }
+        fadeDirection="right"
       />
-      <ContentBlock
-        type="left"
-        title={AboutContent.title}
+
+      <ContentBlockMain
         content={AboutBlockContent()}
-        icon="porroSidelineCrowed.jpg"
         id="about"
-        cite="Photo by: Tuukka Koistinen"
+        image={
+          <ImageNew
+            src={'porroSidelineCrowed.jpg'}
+            width="100%"
+            height="100%"
+            altText="Porró side line crowed in Castelldefels"
+            loading="lazy"
+            cite="Photo by: Tuukka Koistinen"
+          />
+        }
+        fadeDirection="left"
       />
-      <ContentBlock
-        type="right"
-        title={'Contact Us'}
+
+      <ContentBlockMain
         content={ContactUsBlockContent()}
-        icon="manInSand.jpg"
         id="contact"
-        cite="Photo by: Tuukka Koistinen"
+        image={
+          <ImageNew
+            src={'manInSand.jpg'}
+            width="100%"
+            height="100%"
+            altText="Man in sand catching a ultimate frisbee"
+            loading="lazy"
+            cite="Photo by: Tuukka Koistinen"
+          />
+        }
+        fadeDirection="right"
       />
-      <ContentBlock
-        type="left"
-        title={'Bravas'}
+
+      <ContentBlockMain
         content={BravasBlockContent()}
-        icon="fieldsAtSunset.jpg"
-        id="about"
-        cite="Photo by: Bettina Koerner"
+        id="bravas"
+        image={
+          <ImageNew
+            src={'fieldsAtSunset.jpg'}
+            width="100%"
+            height="100%"
+            altText="Sunset on a ultimate frisbee beach castelldefels"
+            loading="lazy"
+            cite="Photo by: Tuukka Koistinen"
+          />
+        }
+        fadeDirection="left"
       />
     </Container>
   );

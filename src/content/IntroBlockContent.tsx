@@ -3,6 +3,7 @@ import React from 'react';
 export default function IntroContent() {
   return (
     <>
+      <h2>Mixed Beach Hat Tournament</h2>
       <p>
         {/* <a
           href="https://docs.google.com/forms/d/e/1FAIpQLSdneZnVzUndli87Kz27hAYJyAJL6MIU2eeWUHWw-wSQGFM6-Q/viewform"
