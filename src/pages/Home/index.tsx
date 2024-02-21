@@ -33,7 +33,7 @@ const Home = () => {
         type="left"
         title={IntroContent.title}
         content={IntroBlockContent()}
-        icon="girlWithBeer.jpg"
+        icon="girlWithBeer"
         id="intro"
         cite="Photo by: Bettina Koerner"
       />
@@ -46,7 +46,7 @@ const Home = () => {
         type="right"
         title={ProductContent.title}
         content={RegisterBlockContent()}
-        icon="manDrinkingPorro.jpg"
+        icon="manDrinkingPorro"
         id="register"
         cite="Photo by: Bettina Koerner"
         // button={[
@@ -60,7 +60,7 @@ const Home = () => {
         type="left"
         title={DateContent.title}
         content={DatesBlockContent()}
-        icon="childPainting.jpg"
+        icon="childPainting"
         id="dates"
         cite="Photo by: Bettina Koerner"
       />
@@ -69,7 +69,7 @@ const Home = () => {
         type="right"
         title={MissionContent.title}
         content={CostsBlockContent()}
-        icon="womanDivingForFirsbee.jpg"
+        icon="womanDivingForFirsbee"
         id="cost"
         cite="Photo by: Tuukka Koistinen"
       />
@@ -77,7 +77,7 @@ const Home = () => {
         type="left"
         title={AboutContent.title}
         content={AboutBlockContent()}
-        icon="porroSidelineCrowed.jpg"
+        icon="porroSidelineCrowed"
         id="about"
         cite="Photo by: Tuukka Koistinen"
       />
@@ -85,7 +85,7 @@ const Home = () => {
         type="right"
         title={'Contact Us'}
         content={ContactUsBlockContent()}
-        icon="manInSand.jpg"
+        icon="manInSand"
         id="contact"
         cite="Photo by: Tuukka Koistinen"
       />
@@ -93,7 +93,7 @@ const Home = () => {
         type="left"
         title={'Bravas'}
         content={BravasBlockContent()}
-        icon="fieldsAtSunset.jpg"
+        icon="fieldsAtSunset"
         id="about"
         cite="Photo by: Bettina Koerner"
       />
