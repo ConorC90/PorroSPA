@@ -11,7 +11,7 @@ export default function IntroContent() {
         <u>Register in May</u> for the Porró XXVI
         {/* </a>{' '} */}
       </p>
-      <p>Nonvember 1st-3rd</p>
+      <p>November 1st-3rd</p>
       <p>Friday - Sunday</p>
       <p>Castelldefels, Barcelona, Spain</p>
     </>
