@@ -4,7 +4,7 @@ export default function AboutContent() {
   return (
     <>
       <p>
-        Don't miss out on the 26th edition of the Porró Open. Barcelona's premier Ultimate Frisbee tournament, held on
+        Don't miss out on the 26th edition of The Porró. Barcelona's premier Ultimate Frisbee tournament, held on
         the beautiful beaches of Castelldefels. The sea, sand and sun are waiting for you.
       </p>
       {/* <p>
