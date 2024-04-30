@@ -30,12 +30,16 @@ export const ButtonWrapper = styled("div")`
   display: flex;
   // justify-content: space-between;
   max-width: 100%;
-
-  // @media screen and (min-width: 1024px) {
-  //   max-width: 80%;
-  // }
-
+  justify-content: center;
   button:last-child {
-    margin-left: 20px;
+    margin-left: 0px;
   }
+  @media screen and (min-width: 624px) {
+    justify-content: flex-start;
+    button:last-child {
+      margin-left: 20px;
+    }
+  }
+
+ 
 `;

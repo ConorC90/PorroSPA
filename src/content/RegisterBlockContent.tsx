@@ -4,7 +4,7 @@ export default function RegisterBlockContnet() {
   return (
     <>
       <p>
-        Sign up in May and experience all that the Porró Open has to offer. Join us for three days of mixed Ultimate on
+        Sign up now and experience all that the Porró Open has to offer. Join us for three days of mixed Ultimate on
         the beautiful beaches of Castelldefels near Barcelona.
       </p>
       {/* <p>

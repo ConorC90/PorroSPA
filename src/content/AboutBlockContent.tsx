@@ -14,7 +14,7 @@ export default function AboutContent() {
         style.
       </p> */}
       <p>
-        It's a celebration you won't want to miss. <u>Sign up in May</u> to join in on the fun!
+        It's a celebration you won't want to miss. <b>Sign up Now</b> to join in on the fun!
         {/* <a
           href="https://docs.google.com/forms/d/e/1FAIpQLSdneZnVzUndli87Kz27hAYJyAJL6MIU2eeWUHWw-wSQGFM6-Q/viewform"
           target="_blank"

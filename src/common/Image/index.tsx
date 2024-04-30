@@ -4,7 +4,7 @@ export const Image = ({ src, width, height }: any) => (
     alt={src}
     width={width}
     height={height}
-    srcSet={`/img/images/${src}Desktop.webp 640w, /img/images/${src}Mobile.webp 300w`}
+    // srcSet={`/img/images/${src}Desktop.webp 640w, /img/images/${src}Mobile.webp 300w`}
   />
 );
 

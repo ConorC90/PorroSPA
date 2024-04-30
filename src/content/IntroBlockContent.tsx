@@ -8,7 +8,7 @@ export default function IntroContent() {
           href="https://docs.google.com/forms/d/e/1FAIpQLSdneZnVzUndli87Kz27hAYJyAJL6MIU2eeWUHWw-wSQGFM6-Q/viewform"
           target="_blank"
         > */}
-        <u>Register in May</u> for the Porró XXVI
+        <b>Register now</b> for the Porró XXVI
         {/* </a>{' '} */}
       </p>
       <p>November 1st-3rd</p>

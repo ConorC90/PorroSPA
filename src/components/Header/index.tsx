@@ -57,18 +57,18 @@ const Header = ({ t }: any) => {
         <CustomNavLinkSmall onClick={() => scrollTo('contact')}>
           <Span>{t('Contact')}</Span>
         </CustomNavLinkSmall>
-        {/* <CustomNavLinkSmall
+        <CustomNavLinkSmall
           style={{ width: '180px' }}
           onClick={() =>
             window.open(
-              'https://docs.google.com/forms/d/e/1FAIpQLSdneZnVzUndli87Kz27hAYJyAJL6MIU2eeWUHWw-wSQGFM6-Q/viewform?usp=sf_link',
+              'https://forms.gle/phwj8Cfxc9bLKesR8',
             )
           }
         >
           <Span>
             <Button>{t('Register')}</Button>
           </Span>
-        </CustomNavLinkSmall> */}
+        </CustomNavLinkSmall>
       </>
     );
   };

@@ -37,11 +37,11 @@ const Home = () => {
         id="intro"
         cite="Photo by: Bettina Koerner"
       />
-      <MiddleBlock
+      {/* <MiddleBlock
         title={MiddleBlockContent.title}
         content={MiddleBlockContent.text}
         button={MiddleBlockContent.button}
-      />
+      /> */}
       <ContentBlock
         type="right"
         title={ProductContent.title}
@@ -49,12 +49,12 @@ const Home = () => {
         icon="manDrinkingPorro"
         id="register"
         cite="Photo by: Bettina Koerner"
-        // button={[
-        //   {
-        //     title: 'Register',
-        //     href: 'https://docs.google.com/forms/d/e/1FAIpQLSdneZnVzUndli87Kz27hAYJyAJL6MIU2eeWUHWw-wSQGFM6-Q/viewform?usp=sf_link',
-        //   },
-        // ]}
+        button={[
+          {
+            title: 'Register',
+            href: 'https://forms.gle/phwj8Cfxc9bLKesR8',
+          },
+        ]}
       />
       <ContentBlock
         type="left"
@@ -69,7 +69,7 @@ const Home = () => {
         type="right"
         title={MissionContent.title}
         content={CostsBlockContent()}
-        icon="womanDivingForFirsbee"
+        icon="womanLayingOutForFrisbee"
         id="cost"
         cite="Photo by: Tuukka Koistinen"
       />
