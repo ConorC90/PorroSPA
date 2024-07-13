@@ -11,7 +11,10 @@ export default function DatesContent() {
         <b>Registration open:</b> May 1st
       </li>
       <li>
-        <b>Registration closed:</b> July 1st
+        <b>Men's Registration closed:</b> July 1st
+      </li>
+      <li>
+        <b>Woman's Registration closed:</b> July 31st
       </li>
       <li>
         <b>Invitations:</b> First week of July
