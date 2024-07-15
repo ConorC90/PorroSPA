@@ -1,5 +1,5 @@
-import React from 'react';
-import { UnorderList } from '../components/ContentBlock/styles';
+import React from "react";
+import { UnorderList } from "../components/ContentBlock/styles";
 
 export default function DatesContent() {
   return (
@@ -14,7 +14,7 @@ export default function DatesContent() {
         <b>Men's Registration closed:</b> July 1st
       </li>
       <li>
-        <b>Woman's Registration closed:</b> July 31st
+        <b>Woman's Registration:</b> Still open
       </li>
       <li>
         <b>Invitations:</b> First week of July
@@ -28,4 +28,3 @@ export default function DatesContent() {
     </UnorderList>
   );
 }
-
