@@ -1,0 +1,33 @@
+.moving-banner {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(136, 2, 1);
+    color: white;
+  }
+  
+  .banner-content {
+    display: flex; /* Use flexbox to align multiple items */
+    animation: moveBanner 17s linear infinite;
+    white-space: nowrap;
+    font-size: medium;
+    font-weight: 600;
+  }
+  @media (max-width: 768px) {
+    /* For tablets and smaller (e.g., mobile devices) */
+    .banner-content {
+      animation-duration: 15s; /* Slower for smaller screens */
+    }
+  }
+  
+  /* The actual animation */
+  @keyframes moveBanner {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

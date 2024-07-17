@@ -136,7 +136,6 @@ export const BannerText = styled('h2')`
   margin-bottom: 0px;
   margin-right: 100px;
   color: white;
-  mar
 `;
 export const MobileBannerText = styled('h2')`
   font-size: 1.5rem;
