@@ -17,7 +17,6 @@ import {
   Span,
 } from "./styles";
 import { Tablet, Desktop } from "../../common/utils/viewPorts";
-import MovingBanner from "../Banner";
 
 const Header = ({ t }: any) => {
   const [open, setOpen] = useState(false);
@@ -120,7 +119,6 @@ const Header = ({ t }: any) => {
           <MenuItem />
         </Drawer>
       </div>
-      <MovingBanner />
     </HeaderSection>
   );
 };
