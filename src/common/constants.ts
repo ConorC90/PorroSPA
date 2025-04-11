@@ -1,0 +1,1 @@
+export const REGISTRATION_FORM_URL = "https://forms.gle/phwj8Cfxc9bLKesR8";

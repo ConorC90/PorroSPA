@@ -17,6 +17,7 @@ import {
   Span,
 } from "./styles";
 import { Tablet, Desktop } from "../../common/utils/viewPorts";
+import { REGISTRATION_FORM_URL } from "../../common/constants";
 
 const Header = ({ t }: any) => {
   const [open, setOpen] = useState(false);
@@ -59,7 +60,7 @@ const Header = ({ t }: any) => {
         </CustomNavLinkSmall>
         <CustomNavLinkSmall
           style={{ width: "180px" }}
-          onClick={() => window.open("https://forms.gle/phwj8Cfxc9bLKesR8")}
+          onClick={() => window.open(REGISTRATION_FORM_URL)}
         >
           <Span>
             <Button>{t("Register")}</Button>
