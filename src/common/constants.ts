@@ -1,1 +1,1 @@
-export const REGISTRATION_FORM_URL = "https://forms.gle/phwj8Cfxc9bLKesR8";
+export const REGISTRATION_FORM_URL = "https://forms.gle/8fTABHo9qx5NyyoL6";
