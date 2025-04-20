@@ -1,6 +1,5 @@
 import { lazy } from "react";
 import IntroContent from "../../content/IntroContent.json";
-import MiddleBlockContent from "../../content/MiddleBlockContent.json";
 import AboutContent from "../../content/AboutContent.json";
 import MissionContent from "../../content/MissionContent.json";
 import ProductContent from "../../content/ProductContent.json";
@@ -13,8 +12,8 @@ import AboutBlockContent from "../../content/AboutBlockContent";
 import CostsBlockContent from "../../content/CostsBlockContent";
 import BravasBlockContent from "../../content/BravasBlockContent";
 import ContactUsBlockContent from "../../content/ContactUsBlockContent";
+import { REGISTRATION_FORM_URL } from "../../common/constants";
 
-const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
@@ -37,11 +36,6 @@ const Home = () => {
         id="intro"
         cite="Photo by: Bettina Koerner"
       />
-      {/* <MiddleBlock
-        title={MiddleBlockContent.title}
-        content={MiddleBlockContent.text}
-        button={MiddleBlockContent.button}
-      /> */}
       <ContentBlock
         type="right"
         title={ProductContent.title}
@@ -52,7 +46,7 @@ const Home = () => {
         button={[
           {
             title: "Register",
-            href: "https://forms.gle/phwj8Cfxc9bLKesR8",
+            href: REGISTRATION_FORM_URL,
           },
         ]}
       />

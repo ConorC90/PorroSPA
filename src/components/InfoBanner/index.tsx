@@ -4,7 +4,7 @@ export default function index() {
   return (
     <Fade big={true}>
       <ContentWrapper>
-        <h1 id="h1Header">The Porró 2024</h1>
+        <h1 id="h1Header">The Porró 2025</h1>
         <h2>November 1st - 3rd</h2>
         <p>Proudly presented by Bravas Ultimate Frisbee Club since 1998.</p>
         <hr></hr>
