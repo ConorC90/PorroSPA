@@ -8,7 +8,7 @@ export default function DatesContent() {
         <b>Tournament:</b> November 1st-3rd <i>(Saturday - Monday)</i>
       </li>
       <li>
-        <b>General Registration open:</b> Soon!
+        <b>General Registration open:</b> It's already open!
       </li>
       <li>
         <b>Registration closed:</b> July 1st
